@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcoralie <gcoralie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:20:07 by gcoralie          #+#    #+#             */
-/*   Updated: 2022/01/07 18:42:12 by gcoralie         ###   ########.fr       */
+/*   Updated: 2022/01/07 18:56:08 by gcoralie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_BONUS_H
-# define GET_NEXT_LINE_BONUS_H
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
 # include <stddef.h>
 
 char	*get_next_line(int fd);
 
 /* 	fd - file descriptor;
-	eof_met - we set this to 1 if we met eof while reading;
-	buf_len - length of the whole string buffer;
-	str_len - length of the string;
+	eof_met - we set this to 1 if we have met eof while reading;
+	buf_len - length of the whole buffer that contains string;
+	str_len - length of the actual string;
 	str_left - part of the string that is left if we have read too much in the
 	previous time */
 typedef struct s_tree

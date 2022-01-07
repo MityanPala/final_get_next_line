@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcoralie <gcoralie@student.21-school.ru    +#+  +:+       +#+        */
+/*   By: gcoralie <gcoralie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:20:12 by gcoralie          #+#    #+#             */
-/*   Updated: 2022/01/04 20:51:52 by gcoralie         ###   ########.fr       */
+/*   Updated: 2022/01/07 18:56:12 by gcoralie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ t_tree	*gc_create_node(int fd)
 	return (node);
 }
 
-/*	Insert node to the tree (or create node if the tree is empty) */
+/*	Insert node to the tree */
 void	gc_insert_node(t_tree **root, t_tree *node)
 {
 	if (root == NULL || node == NULL)
@@ -47,7 +47,7 @@ void	gc_insert_node(t_tree **root, t_tree *node)
 }
 
 /*	Returns NULL if no node with such FD was found or pointer to the node; 
-	Parent pointer will be used for erasing nodes - it will be only valid
+	Parent pointer will be used to erase nodes - it will be only valid
 	if the node we find is not null and is not equal to the root */
 t_tree	*gc_find_node(t_tree *root, int fd, t_tree **parent)
 {

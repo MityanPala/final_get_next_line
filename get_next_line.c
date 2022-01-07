@@ -6,7 +6,7 @@
 /*   By: gcoralie <gcoralie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:20:10 by gcoralie          #+#    #+#             */
-/*   Updated: 2022/01/07 18:41:04 by gcoralie         ###   ########.fr       */
+/*   Updated: 2022/01/07 18:57:23 by gcoralie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 
 #ifndef BUFFER_SIZE
-# define BUFFER_SIZE 10
+# define BUFFER_SIZE 1000
 #endif
 
 static char	*gc_read_line(t_tree *node, int fd);
